@@ -1,0 +1,24 @@
+{
+  "name": "priceactions",
+  "version": "1.0.0",
+  "description": "Al Brooks的《Price Action Fundamentals》系列视频字幕总结",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "price-action",
+    "trading",
+    "forex",
+    "al-brooks"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.40",
+    "vue": "^3.3.9"
+  }
+}

@@ -2,3 +2,8 @@
 *.srt
 .DS_Store
 MES Recap
+
+node_modules
+
+docs/.vitepress/dist
+docs/.vitepress/cache
