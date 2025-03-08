@@ -7,7 +7,8 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "migrate": "chmod +x migrate.sh && ./migrate.sh && node update-config.js"
   },
   "keywords": [
     "price-action",
