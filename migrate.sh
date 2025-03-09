@@ -11,7 +11,7 @@ NC='\033[0m' # No Color
 echo -e "${GREEN}开始迁移字幕总结文件...${NC}"
 
 # 创建基本目录结构（如果不存在）
-mkdir -p docs/{01-terminology,02-chart-basics,03-forex-basics,04-my-setup,05-program-trading,06-personality-traits,07-starting-out,08-candles-setups,09-buying-selling-pressure,10-gaps,11-market-cycle,12-always-in,13-trends,14-breakouts,15-channels,16-tight-channels,17-trading-ranges,price-action-all-in-one,mes-recap}
+mkdir -p docs/{01-terminology,02-chart-basics,03-forex-basics,04-my-setup,05-program-trading,06-personality-traits,07-starting-out,08-candles-setups,09-pullbacks-counting,09-buying-selling-pressure,10-gaps,11-market-cycle,12-always-in,13-trends,14-breakouts,15-channels,16-tight-channels,17-trading-ranges,price-action-all-in-one,mes-recap}
 
 # 处理术语文件
 if [ -f "01 Terminology.md" ]; then
@@ -82,173 +82,115 @@ for file in "08A Candles Setups and Signal Bars.md" "08B Candles Setups and Sign
   fi
 done
 
+# 处理回调和数K线文件
+for file in "09A Pullbacks and Bar Counting.md" "09B Pullbacks and Bar Counting.md" "09C Pullbacks and Bar Counting.md"; do
+  if [ -f "$file" ]; then
+    letter=$(echo "$file" | cut -c 3)
+    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
+    target_path="docs/09-pullbacks-counting/09$letter_lower.md"
+    cp "$file" "$target_path"
+    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
+  fi
+done
+
 # 处理买卖压力文件
-for file in "09A Buying and Selling Pressure.srt" "09B Buying and Selling Pressure.srt" "10A Buying and Selling Pressure.srt" "10B Buying and Selling Pressure.srt"; do
-  base_name=$(basename "$file" .srt)
-  md_file="${base_name}.md"
-  
-  # 检查是否有对应的 md 文件
-  if [ -f "$md_file" ]; then
+for file in "09A Buying and Selling Pressure.md" "09B Buying and Selling Pressure.md" "10A Buying and Selling Pressure.md" "10B Buying and Selling Pressure.md"; do
+  if [ -f "$file" ]; then
     num=$(echo "$file" | cut -c 1-2)
     letter=$(echo "$file" | cut -c 3)
     letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
     target_path="docs/09-buying-selling-pressure/${num}${letter_lower}.md"
-    cp "$md_file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $md_file -> $target_path"
+    cp "$file" "$target_path"
+    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
   fi
 done
 
 # 处理缺口文件
-for file in "11A Gaps.srt" "11B Gaps.srt" "11C Gaps.srt" "11D Gaps.srt"; do
-  base_name=$(basename "$file" .srt)
-  md_file="${base_name}.md"
-  
-  if [ -f "$md_file" ]; then
+for file in "11A Gaps.md" "11B Gaps.md" "11C Gaps.md" "11D Gaps.md"; do
+  if [ -f "$file" ]; then
     letter=$(echo "$file" | cut -c 3)
     letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
     target_path="docs/10-gaps/11$letter_lower.md"
-    cp "$md_file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $md_file -> $target_path"
+    cp "$file" "$target_path"
+    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
   fi
 done
 
 # 处理市场周期文件
-for file in "12A Market Cycle.srt" "12B Market Cycle.srt" "12C Market Cycle.srt"; do
-  base_name=$(basename "$file" .srt)
-  md_file="${base_name}.md"
-  
-  if [ -f "$md_file" ]; then
+for file in "12A Market Cycle.md" "12B Market Cycle.md" "12C Market Cycle.md"; do
+  if [ -f "$file" ]; then
     letter=$(echo "$file" | cut -c 3)
     letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
     target_path="docs/11-market-cycle/12$letter_lower.md"
-    cp "$md_file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $md_file -> $target_path"
+    cp "$file" "$target_path"
+    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
   fi
 done
 
 # 处理Always In文件
-for file in "13A Always In.srt" "13B Always In.srt" "13C Always In.srt"; do
-  base_name=$(basename "$file" .srt)
-  md_file="${base_name}.md"
-  
-  if [ -f "$md_file" ]; then
+for file in "13A Always In.md" "13B Always In.md" "13C Always In.md"; do
+  if [ -f "$file" ]; then
     letter=$(echo "$file" | cut -c 3)
     letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
     target_path="docs/12-always-in/13$letter_lower.md"
-    cp "$md_file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $md_file -> $target_path"
+    cp "$file" "$target_path"
+    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
   fi
 done
 
 # 处理趋势文件
-for file in "14A Trends.srt" "14B Trends.srt" "14C Trends.srt" "14D Trends.srt" "14E Trends.srt"; do
-  base_name=$(basename "$file" .srt)
-  md_file="${base_name}.md"
-  
-  if [ -f "$md_file" ]; then
+for file in "14A Trends.md" "14B Trends.md" "14C Trends.md" "14D Trends.md" "14E Trends.md"; do
+  if [ -f "$file" ]; then
     letter=$(echo "$file" | cut -c 3)
     letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
     target_path="docs/13-trends/14$letter_lower.md"
-    cp "$md_file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $md_file -> $target_path"
+    cp "$file" "$target_path"
+    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
   fi
 done
 
-# 处理突破文件
-for file in "15A Breakouts.srt" "15B Breakouts.srt" "15C Breakouts.srt" "15D Breakouts v2.srt" "15E Breakouts v4.srt" "15F Breakouts v2.srt" "15G Breakouts v3.srt" "15H Breakouts v2.srt"; do
-  # 移除版本信息获取基本名称
-  base_name=$(echo "$file" | sed 's/ v[0-9]\+//')
-  base_name=$(basename "$base_name" .srt)
-  md_file="${base_name}.md"
-  
-  if [ -f "$md_file" ]; then
+# 处理突破文件（包括各种版本）
+for file in "15A Breakouts.md" "15B Breakouts.md" "15C Breakouts.md" "15D Breakouts.md" "15E Breakouts.md" "15F Breakouts.md" "15G Breakouts.md" "15H Breakouts.md" "15D Breakouts v2.md" "15E Breakouts v4.md" "15F Breakouts v2.md" "15G Breakouts v3.md" "15H Breakouts v2.md"; do
+  if [ -f "$file" ]; then
+    # 提取字母部分
     letter=$(echo "$file" | cut -c 3)
     letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
     target_path="docs/14-breakouts/15$letter_lower.md"
-    cp "$md_file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $md_file -> $target_path"
-  elif [ -f "${base_name} v2.md" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/14-breakouts/15$letter_lower.md"
-    cp "${base_name} v2.md" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} ${base_name} v2.md -> $target_path"
-  elif [ -f "${base_name} v3.md" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/14-breakouts/15$letter_lower.md"
-    cp "${base_name} v3.md" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} ${base_name} v3.md -> $target_path"
-  elif [ -f "${base_name} v4.md" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/14-breakouts/15$letter_lower.md"
-    cp "${base_name} v4.md" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} ${base_name} v4.md -> $target_path"
+    cp "$file" "$target_path"
+    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
   fi
 done
 
-# 处理通道文件
-for file in "16A Channels v3.srt" "16B Channels.srt" "16C Channels.srt" "16D Channels.srt" "16E Channels.srt" "16F Channels v2.srt"; do
-  # 移除版本信息获取基本名称
-  base_name=$(echo "$file" | sed 's/ v[0-9]\+//')
-  base_name=$(basename "$base_name" .srt)
-  md_file="${base_name}.md"
-  
-  if [ -f "$md_file" ]; then
+# 处理通道文件（包括各种版本）
+for file in "16A Channels.md" "16B Channels.md" "16C Channels.md" "16D Channels.md" "16E Channels.md" "16F Channels.md" "16A Channels v3.md" "16F Channels v2.md"; do
+  if [ -f "$file" ]; then
     letter=$(echo "$file" | cut -c 3)
     letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
     target_path="docs/15-channels/16$letter_lower.md"
-    cp "$md_file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $md_file -> $target_path"
-  elif [ -f "${base_name} v2.md" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/15-channels/16$letter_lower.md"
-    cp "${base_name} v2.md" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} ${base_name} v2.md -> $target_path"
-  elif [ -f "${base_name} v3.md" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/15-channels/16$letter_lower.md"
-    cp "${base_name} v3.md" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} ${base_name} v3.md -> $target_path"
+    cp "$file" "$target_path"
+    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
   fi
 done
 
 # 处理紧密通道文件
-for file in "17A Tight Channels and MC.srt" "17B Tight Channels and MC.srt"; do
-  base_name=$(basename "$file" .srt)
-  md_file="${base_name}.md"
-  
-  if [ -f "$md_file" ]; then
+for file in "17A Tight Channels and MC.md" "17B Tight Channels and MC.md"; do
+  if [ -f "$file" ]; then
     letter=$(echo "$file" | cut -c 3)
     letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
     target_path="docs/16-tight-channels/17$letter_lower.md"
-    cp "$md_file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $md_file -> $target_path"
+    cp "$file" "$target_path"
+    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
   fi
 done
 
-# 处理交易区间文件
-for file in "18A Trading Ranges v2.srt" "18B Trading Ranges.srt" "18C Trading Ranges.srt" "18D Trading Ranges v2.srt" "18E Trading Ranges.srt" "18F Trading Ranges.srt"; do
-  # 移除版本信息获取基本名称
-  base_name=$(echo "$file" | sed 's/ v[0-9]\+//')
-  base_name=$(basename "$base_name" .srt)
-  md_file="${base_name}.md"
-  
-  if [ -f "$md_file" ]; then
+# 处理交易区间文件（包括各种版本）
+for file in "18A Trading Ranges.md" "18B Trading Ranges.md" "18C Trading Ranges.md" "18D Trading Ranges.md" "18E Trading Ranges.md" "18F Trading Ranges.md" "18A Trading Ranges v2.md" "18D Trading Ranges v2.md"; do
+  if [ -f "$file" ]; then
     letter=$(echo "$file" | cut -c 3)
     letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
     target_path="docs/17-trading-ranges/18$letter_lower.md"
-    cp "$md_file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $md_file -> $target_path"
-  elif [ -f "${base_name} v2.md" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/17-trading-ranges/18$letter_lower.md"
-    cp "${base_name} v2.md" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} ${base_name} v2.md -> $target_path"
+    cp "$file" "$target_path"
+    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
   fi
 done
 

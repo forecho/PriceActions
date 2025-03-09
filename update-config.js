@@ -21,6 +21,7 @@ const directoryTitles = {
     '06-personality-traits': '成功交易者的性格特质',
     '07-starting-out': '入门',
     '08-candles-setups': '蜡烛图设置和信号棒',
+    '09-pullbacks-counting': '回调和数K线',
     '09-buying-selling-pressure': '买卖压力',
     '10-gaps': '缺口',
     '11-market-cycle': '市场周期',
@@ -37,7 +38,7 @@ const directoryTitles = {
 // 按章节对目录进行分组
 const categoryGroups = {
     '基础知识': ['01-terminology', '02-chart-basics', '03-forex-basics', '04-my-setup', '05-program-trading', '06-personality-traits'],
-    '交易技巧': ['07-starting-out', '08-candles-setups', '09-buying-selling-pressure', '10-gaps', '11-market-cycle', '12-always-in', '13-trends', '14-breakouts', '15-channels', '16-tight-channels', '17-trading-ranges'],
+    '交易技巧': ['07-starting-out', '08-candles-setups', '09-pullbacks-counting', '09-buying-selling-pressure', '10-gaps', '11-market-cycle', '12-always-in', '13-trends', '14-breakouts', '15-channels', '16-tight-channels', '17-trading-ranges'],
     '总结': ['price-action-all-in-one'],
     '其他资源': ['mes-recap']
 };
