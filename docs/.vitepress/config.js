@@ -153,6 +153,10 @@ export default defineConfig({
                         "text": "MES 回顾",
                         "items": [
                               {
+                                    "text": "20250307",
+                                    "link": "/mes-recap/20250307"
+                              },
+                              {
                                     "text": "20250310",
                                     "link": "/mes-recap/20250310"
                               }
