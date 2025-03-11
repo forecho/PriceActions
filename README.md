@@ -59,3 +59,14 @@ npm run docs:preview
 ```
 
 
+## 提示词
+
+```
+参考@09C Pullbacks and Bar Counting.md，根据@10B Buying and Selling Pressure.srt @10A Buying and Selling Pressure.srt 总结字幕内容，并创建与字幕文件名同一名称的 .md 文件中
+
+```
+
+
+
+
+
