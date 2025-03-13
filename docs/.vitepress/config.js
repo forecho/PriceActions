@@ -181,6 +181,10 @@ export default defineConfig({
                                           {
                                                 "text": "20250311",
                                                 "link": "/mes-recap/20250311"
+                                          },
+                                          {
+                                                "text": "20250312",
+                                                "link": "/mes-recap/20250312"
                                           }
 
                                     ]
