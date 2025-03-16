@@ -11,196 +11,105 @@ NC='\033[0m' # No Color
 echo -e "${GREEN}开始迁移字幕总结文件...${NC}"
 
 # 创建基本目录结构（如果不存在）
-mkdir -p docs/{01-terminology,02-chart-basics,03-forex-basics,04-my-setup,05-program-trading,06-personality-traits,07-starting-out,08-candles-setups,09-pullbacks-counting,09-buying-selling-pressure,10-gaps,11-market-cycle,12-always-in,13-trends,14-breakouts,15-channels,16-tight-channels,17-trading-ranges,price-action-all-in-one,mes-recap}
+mkdir -p docs/{01-terminology,02-chart-basics,03-forex-basics,04-my-setup,05-program-trading,06-personality-traits,07-starting-out,08-candles-setups,09-pullbacks-counting,10-buying-selling-pressure,11-gaps,12-market-cycle,13-always-in,14-trends,15-breakouts,16-channels,17-tight-channels,18-trading-ranges,price-action-all-in-one,mes-recap}
 
-# 处理术语文件
-if [ -f "01 Terminology.md" ]; then
-  cp "01 Terminology.md" "docs/01-terminology/index.md"
-  echo -e "${GREEN}已迁移:${NC} 01 Terminology.md -> docs/01-terminology/index.md"
-fi
+# 显示当前目录下的所有文件，用于调试
+echo -e "${YELLOW}当前目录下的文件列表:${NC}"
+find . -maxdepth 1 -type f -name "[0-9]*.md" | sort
 
-# 处理图表基础和价格行为文件
-for file in "02A Chart Basics and Price Action.md" "02B Chart Basics and Price Action.md" "02C Chart Basics and Price Action.md" "02D Chart Basics and Price Action.md"; do
-  if [ -f "$file" ]; then
-    # 从文件名提取字母
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/02-chart-basics/02$letter_lower.md"
+# 使用IFS确保文件名中的空格不会导致分割
+IFS=$'\n'
+
+# 通用处理函数
+# 参数:
+# $1: 章节号 (例如: "01")
+# $2: 目标目录名 (例如: "01-terminology")
+# $3: 章节描述 (例如: "术语")
+# $4: 特殊过滤条件 (可选，例如: "Terminology" 或 "Pullbacks")
+# $5: 排除过滤条件 (可选，例如: "Buying and Selling Pressure")
+process_chapter() {
+  local chapter_num="$1"
+  local target_dir="$2"
+  local description="$3"
+  local filter="$4"
+  local exclude="$5"
+  
+  echo -e "${YELLOW}处理${description}文件（第${chapter_num}章 -> ${target_dir}）...${NC}"
+  
+  # 构建查找命令
+  local find_cmd="find . -maxdepth 1 -type f -name \"${chapter_num}*.md\""
+  
+  # 添加过滤条件（如果有）
+  if [ -n "$filter" ]; then
+    find_cmd="${find_cmd} | grep \"${filter}\""
+  fi
+  
+  # 添加排除条件（如果有）
+  if [ -n "$exclude" ]; then
+    find_cmd="${find_cmd} | grep -v \"${exclude}\""
+  fi
+  
+  # 执行查找命令
+  for file in $(eval ${find_cmd}); do
+    # 去掉路径前缀 ./
+    file=${file#./}
+    echo -e "${YELLOW}处理文件:${NC} $file"
+    
+    # 提取字母（如果存在）
+    if [[ "$file" =~ ^${chapter_num}([A-Z]) ]]; then
+      letter=${BASH_REMATCH[1]}
+      letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
+      
+      # 处理文件名中可能包含版本信息的情况
+      if [[ "$file" == *" v"* ]]; then
+        # 保持版本信息，但是不要重复字母
+        version=$(echo "$file" | grep -o "v[0-9]*")
+        target_path="docs/${target_dir}/${chapter_num}${letter_lower}_${version}.md"
+      else
+        target_path="docs/${target_dir}/${chapter_num}${letter_lower}.md"
+      fi
+    else
+      # 没有字母的情况
+      target_path="docs/${target_dir}/index.md"
+    fi
+    
     cp "$file" "$target_path"
     echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
-  fi
-done
+  done
+}
 
-# 处理外汇基础文件
-for file in "03A Forex Basics.md" "03B Forex Basics.md" "03C Forex Basics.md" "03D Forex Basics.md" "03E Forex Basics.md"; do
-  if [ -f "$file" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/03-forex-basics/03$letter_lower.md"
-    cp "$file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
-  fi
-done
+# 处理各章节文件
+process_chapter "01" "01-terminology" "术语" "Terminology"
+process_chapter "02" "02-chart-basics" "图表基础和价格行为"
+process_chapter "03" "03-forex-basics" "外汇基础"
+process_chapter "04" "04-my-setup" "我的设置" "My Setup"
+process_chapter "05" "05-program-trading" "程序化交易" "Program Trading"
+process_chapter "06" "06-personality-traits" "交易者特质" "Personality Traits"
+process_chapter "07" "07-starting-out" "入门"
+process_chapter "08" "08-candles-setups" "蜡烛图设置"
+process_chapter "09" "09-pullbacks-counting" "回调和数K线" "Pullbacks"
+process_chapter "10" "10-buying-selling-pressure" "买卖压力" "Buying and Selling Pressure"
+process_chapter "11" "11-gaps" "缺口" "Gaps"
+process_chapter "12" "12-market-cycle" "市场周期" "Market Cycle"
+process_chapter "13" "13-always-in" "Always In" "Always In"
+process_chapter "14" "14-trends" "趋势" "Trends"
+process_chapter "15" "15-breakouts" "突破" "Breakouts"
+process_chapter "16" "16-channels" "通道" "Channels"
+process_chapter "17" "17-tight-channels" "紧密通道" "Tight Channels"
+process_chapter "18" "18-trading-ranges" "交易区间" "Trading Ranges"
 
-# 处理我的设置文件
-if [ -f "04 My Setup.md" ]; then
-  cp "04 My Setup.md" "docs/04-my-setup/index.md"
-  echo -e "${GREEN}已迁移:${NC} 04 My Setup.md -> docs/04-my-setup/index.md"
-fi
-
-# 处理程序化交易文件
-if [ -f "05 Program Trading.md" ]; then
-  cp "05 Program Trading.md" "docs/05-program-trading/index.md"
-  echo -e "${GREEN}已迁移:${NC} 05 Program Trading.md -> docs/05-program-trading/index.md"
-fi
-
-# 处理交易者特质文件
-if [ -f "06 Personality Traits of Successful Traders.md" ]; then
-  cp "06 Personality Traits of Successful Traders.md" "docs/06-personality-traits/index.md"
-  echo -e "${GREEN}已迁移:${NC} 06 Personality Traits of Successful Traders.md -> docs/06-personality-traits/index.md"
-fi
-
-# 处理入门文件
-for file in "07A Starting Out.md" "07B Starting Out.md"; do
-  if [ -f "$file" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/07-starting-out/07$letter_lower.md"
-    cp "$file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
-  fi
-done
-
-# 处理蜡烛图设置文件
-for file in "08A Candles Setups and Signal Bars.md" "08B Candles Setups and Signal Bars.md" "08C Candles Setups and Signal Bars.md" "08D Candles Setups and Signal Bars.md"; do
-  if [ -f "$file" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/08-candles-setups/08$letter_lower.md"
-    cp "$file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
-  fi
-done
-
-# 处理回调和数K线文件
-for file in "09A Pullbacks and Bar Counting.md" "09B Pullbacks and Bar Counting.md" "09C Pullbacks and Bar Counting.md"; do
-  if [ -f "$file" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/09-pullbacks-counting/09$letter_lower.md"
-    cp "$file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
-  fi
-done
-
-# 处理买卖压力文件
-for file in "09A Buying and Selling Pressure.md" "09B Buying and Selling Pressure.md" "10A Buying and Selling Pressure.md" "10B Buying and Selling Pressure.md"; do
-  if [ -f "$file" ]; then
-    num=$(echo "$file" | cut -c 1-2)
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/09-buying-selling-pressure/${num}${letter_lower}.md"
-    cp "$file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
-  fi
-done
-
-# 处理缺口文件
-for file in "11A Gaps.md" "11B Gaps.md" "11C Gaps.md" "11D Gaps.md"; do
-  if [ -f "$file" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/10-gaps/11$letter_lower.md"
-    cp "$file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
-  fi
-done
-
-# 处理市场周期文件
-for file in "12A Market Cycle.md" "12B Market Cycle.md" "12C Market Cycle.md"; do
-  if [ -f "$file" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/11-market-cycle/12$letter_lower.md"
-    cp "$file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
-  fi
-done
-
-# 处理Always In文件
-for file in "13A Always In.md" "13B Always In.md" "13C Always In.md"; do
-  if [ -f "$file" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/12-always-in/13$letter_lower.md"
-    cp "$file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
-  fi
-done
-
-# 处理趋势文件
-for file in "14A Trends.md" "14B Trends.md" "14C Trends.md" "14D Trends.md" "14E Trends.md"; do
-  if [ -f "$file" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/13-trends/14$letter_lower.md"
-    cp "$file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
-  fi
-done
-
-# 处理突破文件（包括各种版本）
-for file in "15A Breakouts.md" "15B Breakouts.md" "15C Breakouts.md" "15D Breakouts.md" "15E Breakouts.md" "15F Breakouts.md" "15G Breakouts.md" "15H Breakouts.md" "15D Breakouts v2.md" "15E Breakouts v4.md" "15F Breakouts v2.md" "15G Breakouts v3.md" "15H Breakouts v2.md"; do
-  if [ -f "$file" ]; then
-    # 提取字母部分
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/14-breakouts/15$letter_lower.md"
-    cp "$file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
-  fi
-done
-
-# 处理通道文件（包括各种版本）
-for file in "16A Channels.md" "16B Channels.md" "16C Channels.md" "16D Channels.md" "16E Channels.md" "16F Channels.md" "16A Channels v3.md" "16F Channels v2.md"; do
-  if [ -f "$file" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/15-channels/16$letter_lower.md"
-    cp "$file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
-  fi
-done
-
-# 处理紧密通道文件
-for file in "17A Tight Channels and MC.md" "17B Tight Channels and MC.md"; do
-  if [ -f "$file" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/16-tight-channels/17$letter_lower.md"
-    cp "$file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
-  fi
-done
-
-# 处理交易区间文件（包括各种版本）
-for file in "18A Trading Ranges.md" "18B Trading Ranges.md" "18C Trading Ranges.md" "18D Trading Ranges.md" "18E Trading Ranges.md" "18F Trading Ranges.md" "18A Trading Ranges v2.md" "18D Trading Ranges v2.md"; do
-  if [ -f "$file" ]; then
-    letter=$(echo "$file" | cut -c 3)
-    letter_lower=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
-    target_path="docs/17-trading-ranges/18$letter_lower.md"
-    cp "$file" "$target_path"
-    echo -e "${GREEN}已迁移:${NC} $file -> $target_path"
-  fi
-done
+# 恢复默认的IFS
+unset IFS
 
 # 处理总结文件
+echo -e "${YELLOW}处理总结文件...${NC}"
 if [ -f "Price Action All In One.md" ]; then
   cp "Price Action All In One.md" "docs/price-action-all-in-one/index.md"
   echo -e "${GREEN}已迁移:${NC} Price Action All In One.md -> docs/price-action-all-in-one/index.md"
 fi
 
 # 处理 MES Recap 目录
+echo -e "${YELLOW}处理 MES Recap 目录...${NC}"
 if [ -d "MES Recap" ]; then
   cp -r "MES Recap"/* "docs/mes-recap/"
   echo -e "${GREEN}已迁移:${NC} MES Recap/* -> docs/mes-recap/"

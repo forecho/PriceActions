@@ -22,15 +22,15 @@ const directoryTitles = {
     '07-starting-out': '入门',
     '08-candles-setups': '蜡烛图设置和信号棒',
     '09-pullbacks-counting': '回调和数K线',
-    '09-buying-selling-pressure': '买卖压力',
-    '10-gaps': '缺口',
-    '11-market-cycle': '市场周期',
-    '12-always-in': 'Always In',
-    '13-trends': '趋势',
-    '14-breakouts': '突破',
-    '15-channels': '通道',
-    '16-tight-channels': '紧密通道',
-    '17-trading-ranges': '交易区间',
+    '10-buying-selling-pressure': '买卖压力',
+    '11-gaps': '缺口',
+    '12-market-cycle': '市场周期',
+    '13-always-in': 'Always In',
+    '14-trends': '趋势',
+    '15-breakouts': '突破',
+    '16-channels': '通道',
+    '17-tight-channels': '紧密通道',
+    '18-trading-ranges': '交易区间',
     'price-action-all-in-one': '价格行为全解',
     'mes-recap': 'MES回顾'
 };
@@ -38,7 +38,7 @@ const directoryTitles = {
 // 按章节对目录进行分组
 const categoryGroups = {
     '基础知识': ['01-terminology', '02-chart-basics', '03-forex-basics', '04-my-setup', '05-program-trading', '06-personality-traits'],
-    '交易技巧': ['07-starting-out', '08-candles-setups', '09-pullbacks-counting', '09-buying-selling-pressure', '10-gaps', '11-market-cycle', '12-always-in', '13-trends', '14-breakouts', '15-channels', '16-tight-channels', '17-trading-ranges'],
+    '交易技巧': ['07-starting-out', '08-candles-setups', '09-pullbacks-counting', '10-buying-selling-pressure', '11-gaps', '12-market-cycle', '13-always-in', '14-trends', '15-breakouts', '16-channels', '17-tight-channels', '18-trading-ranges'],
     '总结': ['price-action-all-in-one'],
     '其他资源': ['mes-recap']
 };
