@@ -19,7 +19,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "dotenv": "^16.4.7",
     "vitepress": "^1.0.0-rc.40",
     "vue": "^3.3.9"
+  },
+  "dependencies": {
+    "@docsearch/css": "^3.9.0",
+    "@docsearch/js": "^3.9.0"
   }
 }
