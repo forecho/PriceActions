@@ -99,23 +99,23 @@ export default defineConfig({
                                     ]
                               },
                               {
-                                    "text": "蜡烛图设置和信号棒",
+                                    "text": "K线、交易机会和信号K线",
                                     "collapsed": false,
                                     "items": [
                                           {
-                                                "text": "蜡烛图设置和信号棒 A",
+                                                "text": "K线、交易机会和信号K线 A",
                                                 "link": "/08-candles-setups/08a"
                                           },
                                           {
-                                                "text": "蜡烛图设置和信号棒 B",
+                                                "text": "K线、交易机会和信号K线 B",
                                                 "link": "/08-candles-setups/08b"
                                           },
                                           {
-                                                "text": "蜡烛图设置和信号棒 C",
+                                                "text": "K线、交易机会和信号K线 C",
                                                 "link": "/08-candles-setups/08c"
                                           },
                                           {
-                                                "text": "蜡烛图设置和信号棒 D",
+                                                "text": "K线、交易机会和信号K线 D",
                                                 "link": "/08-candles-setups/08d"
                                           }
                                     ]
@@ -139,15 +139,15 @@ export default defineConfig({
                                     ]
                               },
                               {
-                                    "text": "买卖压力",
+                                    "text": "买压和卖压",
                                     "collapsed": false,
                                     "items": [
                                           {
-                                                "text": "买卖压力 A",
+                                                "text": "买压和卖压 A",
                                                 "link": "/10-buying-selling-pressure/10a"
                                           },
                                           {
-                                                "text": "买卖压力 B",
+                                                "text": "买压和卖压 B",
                                                 "link": "/10-buying-selling-pressure/10b"
                                           }
                                     ]
@@ -305,45 +305,45 @@ export default defineConfig({
                                     ]
                               },
                               {
-                                    "text": "紧密通道",
+                                    "text": "窄通道和微通道",
                                     "collapsed": false,
                                     "items": [
                                           {
-                                                "text": "紧密通道 A",
+                                                "text": "窄通道和微通道 A",
                                                 "link": "/17-tight-channels/17a"
                                           },
                                           {
-                                                "text": "紧密通道 B",
+                                                "text": "窄通道和微通道 B",
                                                 "link": "/17-tight-channels/17b"
                                           }
                                     ]
                               },
                               {
-                                    "text": "交易区间",
+                                    "text": "震荡区间",
                                     "collapsed": false,
                                     "items": [
                                           {
-                                                "text": "交易区间 A",
+                                                "text": "震荡区间 A",
                                                 "link": "/18-trading-ranges/18a"
                                           },
                                           {
-                                                "text": "交易区间 B",
+                                                "text": "震荡区间 B",
                                                 "link": "/18-trading-ranges/18b"
                                           },
                                           {
-                                                "text": "交易区间 C",
+                                                "text": "震荡区间 C",
                                                 "link": "/18-trading-ranges/18c"
                                           },
                                           {
-                                                "text": "交易区间 D",
+                                                "text": "震荡区间 D",
                                                 "link": "/18-trading-ranges/18d"
                                           },
                                           {
-                                                "text": "交易区间 E",
+                                                "text": "震荡区间 E",
                                                 "link": "/18-trading-ranges/18e"
                                           },
                                           {
-                                                "text": "交易区间 F",
+                                                "text": "震荡区间 F",
                                                 "link": "/18-trading-ranges/18f"
                                           }
                                     ]
