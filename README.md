@@ -4,6 +4,8 @@
 
 本项目是根据 Al Brooks 的《Price Action Fundamentals》系列视频字幕，使用 AI 进行的总结。使用 VitePress 构建，并通过 GitHub Actions 部署到 Cloudflare Pages。
 
+本项目的创做目的不是取代[官方课程](https://www.brookstradingcourse.com/)，而且为了快速的回顾和复习官方的课程内容，所以请优先看完官方的课程再来看这个内容总结，不然可能会有点懵逼。
+
 ## 本地开发
 
 ```bash

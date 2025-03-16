@@ -267,6 +267,84 @@ export default defineConfig({
                               {
                                     "text": "突破 G",
                                     "link": "/15-breakouts/15g"
+                              },
+                              {
+                                    "text": "15h_v2",
+                                    "link": "/15-breakouts/15h_v2"
+                              }
+                        ]
+                  },
+                  {
+                        "text": "通道",
+                        "collapsed": false,
+                        "items": [
+                              {
+                                    "text": "16a_v3",
+                                    "link": "/16-channels/16a_v3"
+                              },
+                              {
+                                    "text": "通道 B",
+                                    "link": "/16-channels/16b"
+                              },
+                              {
+                                    "text": "通道 C",
+                                    "link": "/16-channels/16c"
+                              },
+                              {
+                                    "text": "通道 D",
+                                    "link": "/16-channels/16d"
+                              },
+                              {
+                                    "text": "通道 E",
+                                    "link": "/16-channels/16e"
+                              },
+                              {
+                                    "text": "16f_v2",
+                                    "link": "/16-channels/16f_v2"
+                              }
+                        ]
+                  },
+                  {
+                        "text": "紧密通道",
+                        "collapsed": false,
+                        "items": [
+                              {
+                                    "text": "紧密通道 A",
+                                    "link": "/17-tight-channels/17a"
+                              },
+                              {
+                                    "text": "紧密通道 B",
+                                    "link": "/17-tight-channels/17b"
+                              }
+                        ]
+                  },
+                  {
+                        "text": "交易区间",
+                        "collapsed": false,
+                        "items": [
+                              {
+                                    "text": "18a_v2",
+                                    "link": "/18-trading-ranges/18a_v2"
+                              },
+                              {
+                                    "text": "交易区间 B",
+                                    "link": "/18-trading-ranges/18b"
+                              },
+                              {
+                                    "text": "交易区间 C",
+                                    "link": "/18-trading-ranges/18c"
+                              },
+                              {
+                                    "text": "18d_v2",
+                                    "link": "/18-trading-ranges/18d_v2"
+                              },
+                              {
+                                    "text": "交易区间 E",
+                                    "link": "/18-trading-ranges/18e"
+                              },
+                              {
+                                    "text": "交易区间 F",
+                                    "link": "/18-trading-ranges/18f"
                               }
                         ]
                   }
