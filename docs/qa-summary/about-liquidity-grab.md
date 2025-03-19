@@ -61,3 +61,41 @@ Here are more information. Black box is representing your TR and notice how it i
 Notice how big bear bar closes are bought when bars are overlapping. Anyone selling b9 close will be trapped and force to sell the mid point of b9 to breakeven with b10. Noice how bulls bought the b9 close and b10 went up formed a wick as stuck bears sold the on to mid range to get back to where they sold which was the close of b9 and low of b9 for those stop order bears to get a breakeven. Notice how b10 body came back down to the b9 low and gave stop order bears a breakeven before closing at the close of b9. And eventually limit order bulls start to buy as the stop order bears exited with BE. Thus you get b11,12,13 14 bullish stacking up to the top of the TR.
 
 注意当K线重叠时，大的空头K线收盘如何被买入。任何在b9收盘价卖出的人都会被套住，被迫在b9的中点位置卖出以在b10获得保本。注意多头是如何在b9收盘价买入的，而b10向上形成了影线，因为被套的空头在中间区域卖出以回到他们卖出的位置（即b9的收盘价和低点），让那些止损单空头得以保本。注意b10实体如何回落到b9的低点，在收于b9的收盘价之前给止损单空头一个保本机会。最终，当止损单空头以保本价退出时，限价单多头开始买入。因此，你看到b11、12、13、14多头K线堆积到交易区间顶部。
+
+I think bar by bar reading is the Holly grail of priceaction trading and nothing can beat it. If you want accuracy and want to enter the market with the machines and not trade against them, you really need to understand the two types of bars Al teaches and learn how to trade them. 
+
+我认为逐根K线分析是价格行为交易的圣杯，没有什么能比得上它。如果你想要准确性，想要和机器一起进场而不是与之对抗，你真的需要理解Al教授的两种K线类型，并学会如何交易它们。
+
+If a A doji is a trading range bar, when is it NOT good to sell its high but buy its low? 
+Answer: when price is in a stop order market. Than the overlapping doji bar will become a follow through bar that you can buy. Bull flags are a good example or bear flags for selling a doji above but not buying below.
+Example; b37, 38, 39, 40 is stop order market but in a a trading range (look left). B39 is momentum as it fills b38 upper wick and you get a doji b40, will you sell above? NO. That is continuation for bulls
+
+如果一根十字星是区间K线，什么时候不适合在高点卖出而是在低点买入？
+答案：当价格处于止损单市场时。这时重叠的十字星K线将成为一根你可以买入的延续性K线。多头旗形整理就是一个很好的例子，或者空头旗形整理时在上方卖出而不是在下方买入。
+例如：b37、38、39、40是止损单市场，但处于交易区间内（看左边）。b39有动能，因为它填补了b38的上影线，然后你得到一根十字星b40，你会在上方卖出吗？不会。这是多头的延续。
+
+![j3QVxd](https://img.forecho.com/j3QVxd.png)
+
+![cNUiTP](https://img.forecho.com/cNUiTP.png)
+
+Bulls bought above doji and continued for a while. Bulls know this is a Tr and sellers above prior highs so they take profit soon
+So reading the conditions first and then trading the bars accordingly is key
+
+多头在十字星上方买入并持续了一段时间。多头知道这是一个交易区间，前期高点上方有卖家，所以他们很快就获利了。
+所以先读懂市场条件，然后相应地交易K线是关键。
+
+Example: look at b6 and 7. Sell the close so it was stop order market but b7 closed weak bearish bar, so it is a doji. A bear doji, but in a trending leg. Sell above the doji rather than buy way below. You have a good shirt entry with a limit order above b7
+
+例如：看b6和b7。在收盘价卖出所以这是止损单市场，但b7收了一根弱势空头K线，所以它是一根十字星。这是一根空头十字星，但处于趋势阶段中。应该在十字星上方卖出而不是在远低于它的位置买入。你可以在b7上方设置限价单，这是一个不错的做空入场点。
+
+![J94cXf](https://img.forecho.com/J94cXf.png)
+
+And since it is a doji and testing the TR lows, lower third to low of b7 is now a limit buy area. Bulls will be waiting to buy
+
+由于这是一根十字星并且在测试交易区间低点，b7的下三分之一到低点现在是一个限价买入区域。多头会在这里等待买入。
+
+![jYh22F](https://img.forecho.com/jYh22F.png)
+
+Divide the trading range bar7 into three sections and find your limit buy zone (green box), which aligns well with large TR lows (black box) and have limit orders waiting there
+
+将交易区间的7号K线分成三个部分，找到你的限价买入区域（绿框），它与大交易区间的低点（黑框）很好地对齐，在那里设置限价单等待。
