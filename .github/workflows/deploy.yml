@@ -39,4 +39,3 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy docs/.vitepress/dist --project-name=priceactions --branch=main
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          wranglerVersion: '3' 
