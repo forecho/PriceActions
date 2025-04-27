@@ -327,10 +327,6 @@ export default defineConfig({
                         "collapsed": false,
                         "items": [
                               {
-                                    "text": "18a_v2",
-                                    "link": "/18-trading-ranges/18a_v2"
-                              },
-                              {
                                     "text": "震荡区间 A",
                                     "link": "/18-trading-ranges/18a"
                               },
