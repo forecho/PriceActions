@@ -377,6 +377,42 @@ export default defineConfig({
                                     "link": "/19-support-resistance/19e"
                               }
                         ]
+                  },
+                  {
+                        "text": "测量移动",
+                        "collapsed": false,
+                        "items": [
+                              {
+                                    "text": "测量移动 A",
+                                    "link": "/20-measured-moves/20a"
+                              },
+                              {
+                                    "text": "测量移动 B",
+                                    "link": "/20-measured-moves/20b"
+                              }
+                        ]
+                  },
+                  {
+                        "text": "反转",
+                        "collapsed": false,
+                        "items": [
+                              {
+                                    "text": "反转 A",
+                                    "link": "/21-reversals/21a"
+                              },
+                              {
+                                    "text": "反转 B",
+                                    "link": "/21-reversals/21b"
+                              },
+                              {
+                                    "text": "反转 C",
+                                    "link": "/21-reversals/21c"
+                              },
+                              {
+                                    "text": "反转 D",
+                                    "link": "/21-reversals/21d"
+                              }
+                        ]
                   }
             ]
       },
