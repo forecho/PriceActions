@@ -299,10 +299,6 @@ export default defineConfig({
                                     "link": "/16-channels/16e"
                               },
                               {
-                                    "text": "16f_v2",
-                                    "link": "/16-channels/16f_v2"
-                              },
-                              {
                                     "text": "通道 F",
                                     "link": "/16-channels/16f"
                               }
