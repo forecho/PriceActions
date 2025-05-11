@@ -351,6 +351,32 @@ export default defineConfig({
                                     "link": "/18-trading-ranges/18f"
                               }
                         ]
+                  },
+                  {
+                        "text": "支撑和阻力",
+                        "collapsed": false,
+                        "items": [
+                              {
+                                    "text": "支撑和阻力 A",
+                                    "link": "/19-support-resistance/19a"
+                              },
+                              {
+                                    "text": "支撑和阻力 B",
+                                    "link": "/19-support-resistance/19b"
+                              },
+                              {
+                                    "text": "支撑和阻力 C",
+                                    "link": "/19-support-resistance/19c"
+                              },
+                              {
+                                    "text": "支撑和阻力 D",
+                                    "link": "/19-support-resistance/19d"
+                              },
+                              {
+                                    "text": "支撑和阻力 E",
+                                    "link": "/19-support-resistance/19e"
+                              }
+                        ]
                   }
             ]
       },

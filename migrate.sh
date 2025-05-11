@@ -11,7 +11,7 @@ NC='\033[0m' # No Color
 echo -e "${GREEN}开始迁移字幕总结文件...${NC}"
 
 # 创建基本目录结构（如果不存在）
-mkdir -p docs/{01-terminology,02-chart-basics,03-forex-basics,04-my-setup,05-program-trading,06-personality-traits,07-starting-out,08-candles-setups,09-pullbacks-counting,10-buying-selling-pressure,11-gaps,12-market-cycle,13-always-in,14-trends,15-breakouts,16-channels,17-tight-channels,18-trading-ranges,price-action-all-in-one,mes-recap}
+mkdir -p docs/{01-terminology,02-chart-basics,03-forex-basics,04-my-setup,05-program-trading,06-personality-traits,07-starting-out,08-candles-setups,09-pullbacks-counting,10-buying-selling-pressure,11-gaps,12-market-cycle,13-always-in,14-trends,15-breakouts,16-channels,17-tight-channels,18-trading-ranges,19-support-resistance,20-measured-moves,21-reversals,22-major-trend-reversals,23-final-flags,24-wedges,25-double-tops-bottoms,26-triangles,27-head-shoulders,28-rounded-tops-bottoms,29-climaxes,price-action-all-in-one,mes-recap}
 
 # 显示当前目录下的所有文件，用于调试
 echo -e "${YELLOW}当前目录下的文件列表:${NC}"
@@ -97,6 +97,19 @@ process_chapter "15" "15-breakouts" "突破" "Breakouts"
 process_chapter "16" "16-channels" "通道" "Channels"
 process_chapter "17" "17-tight-channels" "窄通道和微通道" "Tight Channels"
 process_chapter "18" "18-trading-ranges" "震荡区间" "Trading Ranges"
+
+# 处理 19-29 章节文件
+process_chapter "19" "19-support-resistance" "支撑和阻力" "Support and Resistance"
+process_chapter "20" "20-measured-moves" "测量移动" "Measured Moves"
+process_chapter "21" "21-reversals" "反转" "Reversals"
+process_chapter "22" "22-major-trend-reversals" "主要趋势反转" "Major Trend Reversals"
+process_chapter "23" "23-final-flags" "最终旗形" "Final Flags"
+process_chapter "24" "24-wedges" "楔形" "Wedges"
+process_chapter "25" "25-double-tops-bottoms" "双顶和双底" "Double Tops and Bottoms"
+process_chapter "26" "26-triangles" "三角形" "Triangles"
+process_chapter "27" "27-head-shoulders" "头肩形态" "Head and Shoulders"
+process_chapter "28" "28-rounded-tops-bottoms" "圆顶和圆底" "Rounded Tops and Bottoms"
+process_chapter "29" "29-climaxes" "高潮" "Climaxes"
 
 # 恢复默认的IFS
 unset IFS

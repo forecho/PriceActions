@@ -31,6 +31,17 @@ const directoryTitles = {
     '16-channels': '通道',
     '17-tight-channels': '窄通道和微通道',
     '18-trading-ranges': '震荡区间',
+    '19-support-resistance': '支撑和阻力',
+    '20-measured-moves': '测量移动',
+    '21-reversals': '反转',
+    '22-major-trend-reversals': '主要趋势反转',
+    '23-final-flags': '最终旗形',
+    '24-wedges': '楔形',
+    '25-double-tops-bottoms': '双顶和双底',
+    '26-triangles': '三角形',
+    '27-head-shoulders': '头肩形态',
+    '28-rounded-tops-bottoms': '圆顶和圆底',
+    '29-climaxes': '高潮',
     'price-action-all-in-one': '价格行为全解',
     'mes-recap': 'MES回顾'
 };
@@ -38,7 +49,7 @@ const directoryTitles = {
 // 按章节对目录进行分组
 const categoryGroups = {
     '基础知识': ['01-terminology', '02-chart-basics', '03-forex-basics', '04-my-setup', '05-program-trading', '06-personality-traits'],
-    '交易技巧': ['07-starting-out', '08-candles-setups', '09-pullbacks-counting', '10-buying-selling-pressure', '11-gaps', '12-market-cycle', '13-always-in', '14-trends', '15-breakouts', '16-channels', '17-tight-channels', '18-trading-ranges'],
+    '交易技巧': ['07-starting-out', '08-candles-setups', '09-pullbacks-counting', '10-buying-selling-pressure', '11-gaps', '12-market-cycle', '13-always-in', '14-trends', '15-breakouts', '16-channels', '17-tight-channels', '18-trading-ranges', '19-support-resistance', '20-measured-moves', '21-reversals', '22-major-trend-reversals', '23-final-flags', '24-wedges', '25-double-tops-bottoms', '26-triangles', '27-head-shoulders', '28-rounded-tops-bottoms', '29-climaxes'],
     '总结': ['price-action-all-in-one'],
     '其他资源': ['mes-recap']
 };
