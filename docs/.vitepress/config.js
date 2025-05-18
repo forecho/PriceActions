@@ -409,6 +409,68 @@ export default defineConfig({
                                     "link": "/21-reversals/21d"
                               }
                         ]
+                  },
+                  {
+                        "text": "主要趋势反转",
+                        "collapsed": false,
+                        "items": [
+                              {
+                                    "text": "主要趋势反转 A",
+                                    "link": "/22-major-trend-reversals/22a"
+                              },
+                              {
+                                    "text": "主要趋势反转 B",
+                                    "link": "/22-major-trend-reversals/22b"
+                              },
+                              {
+                                    "text": "主要趋势反转 C",
+                                    "link": "/22-major-trend-reversals/22c"
+                              },
+                              {
+                                    "text": "主要趋势反转 D",
+                                    "link": "/22-major-trend-reversals/22d"
+                              }
+                        ]
+                  },
+                  {
+                        "text": "最终旗形",
+                        "collapsed": false,
+                        "items": [
+                              {
+                                    "text": "最终旗形 A",
+                                    "link": "/23-final-flags/23a"
+                              },
+                              {
+                                    "text": "最终旗形 B",
+                                    "link": "/23-final-flags/23b"
+                              }
+                        ]
+                  },
+                  {
+                        "text": "楔形",
+                        "collapsed": false,
+                        "items": [
+                              {
+                                    "text": "楔形 A",
+                                    "link": "/24-wedges/24a"
+                              },
+                              {
+                                    "text": "楔形 B",
+                                    "link": "/24-wedges/24b"
+                              },
+                              {
+                                    "text": "楔形 C",
+                                    "link": "/24-wedges/24c"
+                              },
+                              {
+                                    "text": "楔形 D",
+                                    "link": "/24-wedges/24d"
+                              },
+                              {
+                                    "text": "楔形 E",
+                                    "link": "/24-wedges/24e"
+                              }
+                        ]
                   }
             ]
       },
