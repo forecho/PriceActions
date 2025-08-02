@@ -25,6 +25,10 @@
   },
   "dependencies": {
     "@docsearch/css": "^3.9.0",
-    "@docsearch/js": "^3.9.0"
+    "@docsearch/js": "^3.9.0",
+    "@google/generative-ai": "^0.24.1"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }
