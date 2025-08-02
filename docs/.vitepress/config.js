@@ -5,6 +5,648 @@ export default defineConfig({
   title: "价格行为交易",
   description: "Al Brooks 的《Price Action Fundamentals》系列视频总结",
   themeConfig: {
+    sidebar: [
+  {
+    "text": "terminology",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "index",
+        "link": "/01-terminology/index"
+      }
+    ]
+  },
+  {
+    "text": "chart basics",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/02-chart-basics/02a"
+      },
+      {
+        "text": "",
+        "link": "/02-chart-basics/02b"
+      },
+      {
+        "text": "",
+        "link": "/02-chart-basics/02c"
+      },
+      {
+        "text": "",
+        "link": "/02-chart-basics/02d"
+      }
+    ]
+  },
+  {
+    "text": "forex basics",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/03-forex-basics/03a"
+      },
+      {
+        "text": "",
+        "link": "/03-forex-basics/03b"
+      },
+      {
+        "text": "",
+        "link": "/03-forex-basics/03c"
+      },
+      {
+        "text": "",
+        "link": "/03-forex-basics/03d"
+      },
+      {
+        "text": "",
+        "link": "/03-forex-basics/03e"
+      }
+    ]
+  },
+  {
+    "text": "my setup",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "index",
+        "link": "/04-my-setup/index"
+      }
+    ]
+  },
+  {
+    "text": "program trading",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "index",
+        "link": "/05-program-trading/index"
+      }
+    ]
+  },
+  {
+    "text": "personality traits",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "index",
+        "link": "/06-personality-traits/index"
+      }
+    ]
+  },
+  {
+    "text": "starting out",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/07-starting-out/07a"
+      },
+      {
+        "text": "",
+        "link": "/07-starting-out/07b"
+      }
+    ]
+  },
+  {
+    "text": "candles setups",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/08-candles-setups/08a"
+      },
+      {
+        "text": "",
+        "link": "/08-candles-setups/08b"
+      },
+      {
+        "text": "",
+        "link": "/08-candles-setups/08c"
+      },
+      {
+        "text": "",
+        "link": "/08-candles-setups/08d"
+      }
+    ]
+  },
+  {
+    "text": "pullbacks counting",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/09-pullbacks-counting/09a"
+      },
+      {
+        "text": "",
+        "link": "/09-pullbacks-counting/09b"
+      },
+      {
+        "text": "",
+        "link": "/09-pullbacks-counting/09c"
+      }
+    ]
+  },
+  {
+    "text": "buying selling pressure",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/10-buying-selling-pressure/10a"
+      },
+      {
+        "text": "",
+        "link": "/10-buying-selling-pressure/10b"
+      }
+    ]
+  },
+  {
+    "text": "gaps",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/11-gaps/11a"
+      },
+      {
+        "text": "",
+        "link": "/11-gaps/11b"
+      },
+      {
+        "text": "",
+        "link": "/11-gaps/11c"
+      },
+      {
+        "text": "",
+        "link": "/11-gaps/11d"
+      }
+    ]
+  },
+  {
+    "text": "market cycle",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/12-market-cycle/12a"
+      },
+      {
+        "text": "",
+        "link": "/12-market-cycle/12b"
+      },
+      {
+        "text": "",
+        "link": "/12-market-cycle/12c"
+      }
+    ]
+  },
+  {
+    "text": "always in",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/13-always-in/13a"
+      },
+      {
+        "text": "",
+        "link": "/13-always-in/13b"
+      },
+      {
+        "text": "",
+        "link": "/13-always-in/13c"
+      }
+    ]
+  },
+  {
+    "text": "trends",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/14-trends/14a"
+      },
+      {
+        "text": "",
+        "link": "/14-trends/14b"
+      },
+      {
+        "text": "",
+        "link": "/14-trends/14c"
+      },
+      {
+        "text": "",
+        "link": "/14-trends/14d"
+      },
+      {
+        "text": "",
+        "link": "/14-trends/14e"
+      }
+    ]
+  },
+  {
+    "text": "breakouts",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/15-breakouts/15a"
+      },
+      {
+        "text": "",
+        "link": "/15-breakouts/15b"
+      },
+      {
+        "text": "",
+        "link": "/15-breakouts/15c"
+      },
+      {
+        "text": "",
+        "link": "/15-breakouts/15d"
+      },
+      {
+        "text": "",
+        "link": "/15-breakouts/15e"
+      },
+      {
+        "text": "",
+        "link": "/15-breakouts/15f"
+      },
+      {
+        "text": "",
+        "link": "/15-breakouts/15g"
+      },
+      {
+        "text": "",
+        "link": "/15-breakouts/15h"
+      }
+    ]
+  },
+  {
+    "text": "channels",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/16-channels/16a"
+      },
+      {
+        "text": "",
+        "link": "/16-channels/16b"
+      },
+      {
+        "text": "",
+        "link": "/16-channels/16c"
+      },
+      {
+        "text": "",
+        "link": "/16-channels/16d"
+      },
+      {
+        "text": "",
+        "link": "/16-channels/16e"
+      },
+      {
+        "text": "",
+        "link": "/16-channels/16f"
+      }
+    ]
+  },
+  {
+    "text": "tight channels",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/17-tight-channels/17a"
+      },
+      {
+        "text": "",
+        "link": "/17-tight-channels/17b"
+      }
+    ]
+  },
+  {
+    "text": "trading ranges",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/18-trading-ranges/18a"
+      },
+      {
+        "text": "",
+        "link": "/18-trading-ranges/18b"
+      },
+      {
+        "text": "",
+        "link": "/18-trading-ranges/18c"
+      },
+      {
+        "text": "",
+        "link": "/18-trading-ranges/18d"
+      },
+      {
+        "text": "",
+        "link": "/18-trading-ranges/18e"
+      },
+      {
+        "text": "",
+        "link": "/18-trading-ranges/18f"
+      }
+    ]
+  },
+  {
+    "text": "support resistance",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/19-support-resistance/19a"
+      },
+      {
+        "text": "",
+        "link": "/19-support-resistance/19b"
+      },
+      {
+        "text": "",
+        "link": "/19-support-resistance/19c"
+      },
+      {
+        "text": "",
+        "link": "/19-support-resistance/19d"
+      },
+      {
+        "text": "",
+        "link": "/19-support-resistance/19e"
+      }
+    ]
+  },
+  {
+    "text": "measured moves",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/20-measured-moves/20a"
+      },
+      {
+        "text": "",
+        "link": "/20-measured-moves/20b"
+      }
+    ]
+  },
+  {
+    "text": "reversals",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/21-reversals/21a"
+      },
+      {
+        "text": "",
+        "link": "/21-reversals/21b"
+      },
+      {
+        "text": "",
+        "link": "/21-reversals/21c"
+      },
+      {
+        "text": "",
+        "link": "/21-reversals/21d"
+      }
+    ]
+  },
+  {
+    "text": "major trend reversals",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/22-major-trend-reversals/22a"
+      },
+      {
+        "text": "",
+        "link": "/22-major-trend-reversals/22b"
+      },
+      {
+        "text": "",
+        "link": "/22-major-trend-reversals/22c"
+      },
+      {
+        "text": "",
+        "link": "/22-major-trend-reversals/22d"
+      }
+    ]
+  },
+  {
+    "text": "final flags",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/23-final-flags/23a"
+      },
+      {
+        "text": "",
+        "link": "/23-final-flags/23b"
+      }
+    ]
+  },
+  {
+    "text": "wedges",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/24-wedges/24a"
+      },
+      {
+        "text": "",
+        "link": "/24-wedges/24b"
+      },
+      {
+        "text": "",
+        "link": "/24-wedges/24c"
+      },
+      {
+        "text": "",
+        "link": "/24-wedges/24d"
+      },
+      {
+        "text": "",
+        "link": "/24-wedges/24e"
+      }
+    ]
+  },
+  {
+    "text": "double tops bottoms",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/25-double-tops-bottoms/25a"
+      },
+      {
+        "text": "",
+        "link": "/25-double-tops-bottoms/25b"
+      }
+    ]
+  },
+  {
+    "text": "triangles",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/26-triangles/26a"
+      },
+      {
+        "text": "",
+        "link": "/26-triangles/26b"
+      }
+    ]
+  },
+  {
+    "text": "head shoulders",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/27-head-shoulders/27a"
+      },
+      {
+        "text": "",
+        "link": "/27-head-shoulders/27b"
+      }
+    ]
+  },
+  {
+    "text": "rounded tops bottoms",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "index",
+        "link": "/28-rounded-tops-bottoms/index"
+      }
+    ]
+  },
+  {
+    "text": "climaxes",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/29-climaxes/29a"
+      },
+      {
+        "text": "",
+        "link": "/29-climaxes/29b"
+      },
+      {
+        "text": "",
+        "link": "/29-climaxes/29c"
+      },
+      {
+        "text": "",
+        "link": "/29-climaxes/29d"
+      },
+      {
+        "text": "",
+        "link": "/29-climaxes/29e"
+      }
+    ]
+  },
+  {
+    "text": "index",
+    "link": "/index"
+  },
+  {
+    "text": "mes recap",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "",
+        "link": "/mes-recap/20250307"
+      },
+      {
+        "text": "",
+        "link": "/mes-recap/20250310"
+      },
+      {
+        "text": "",
+        "link": "/mes-recap/20250311"
+      },
+      {
+        "text": "",
+        "link": "/mes-recap/20250312"
+      },
+      {
+        "text": "",
+        "link": "/mes-recap/20250313"
+      },
+      {
+        "text": "",
+        "link": "/mes-recap/20250314"
+      },
+      {
+        "text": "",
+        "link": "/mes-recap/20250317"
+      },
+      {
+        "text": "",
+        "link": "/mes-recap/20250318"
+      },
+      {
+        "text": "",
+        "link": "/mes-recap/20250319"
+      },
+      {
+        "text": "",
+        "link": "/mes-recap/20250320"
+      },
+      {
+        "text": "",
+        "link": "/mes-recap/20250321"
+      },
+      {
+        "text": "",
+        "link": "/mes-recap/20250409"
+      },
+      {
+        "text": "",
+        "link": "/mes-recap/20250410"
+      },
+      {
+        "text": "",
+        "link": "/mes-recap/20250411"
+      }
+    ]
+  },
+  {
+    "text": "price action all in one",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "index",
+        "link": "/price-action-all-in-one/index"
+      }
+    ]
+  },
+  {
+    "text": "qa summary",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "about-liquidity-grab",
+        "link": "/qa-summary/about-liquidity-grab"
+      }
+    ]
+  }
+],
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
