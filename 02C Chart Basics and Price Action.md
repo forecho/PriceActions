@@ -1,4 +1,4 @@
-# 价格行为基础与痛苦交易 (基于 Al Brooks 课程 03 字幕)
+# 价格行为基础与痛苦交易
 
 ## 价格行为的本质 (The Nature of Price Action)
 

@@ -1,4 +1,4 @@
-# 高潮的成因与失败形态 (第五部分) (基于 Al Brooks 课程字幕)
+# 高潮的成因与失败形态 (第五部分) 
 
 ## 高潮与期权做市商 (Climaxes & Options Market Makers)
 

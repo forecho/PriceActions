@@ -1,4 +1,4 @@
-# 单边趋势中的交易 (第三部分) (基于 Al Brooks 课程字幕)
+# 单边趋势中的交易 (第三部分) 
 
 ## 单边趋势中的交易策略 (Trading Strategies in a Single-Leg Trend)
 

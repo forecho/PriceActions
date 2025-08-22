@@ -1,6 +1,4 @@
-好的，这是根据您提供的SRT字幕内容和参考Markdown格式生成的总结：
-
-# 外汇交易基础 (基于 Al Brooks 课程字幕)
+# 外汇交易基础
 
 ## 外汇市场概览 (What is the Forex Market?)
 

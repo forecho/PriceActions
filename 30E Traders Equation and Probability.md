@@ -1,4 +1,4 @@
-# 数学期望与概率（第五部分）(基于 Al Brooks 课程字幕)
+# 数学期望与概率（第五部分）
 
 ## 交易终点的 90% 确定性悖论 (The 90% Certainty Paradox at the Target)
 

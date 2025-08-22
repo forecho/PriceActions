@@ -1,4 +1,4 @@
-# 高潮（第一部分）(基于 Al Brooks 课程 10A 字幕)
+# 高潮（第一部分）
 
 ## 高潮的定义与背景 (Definition and Context of Climax)
 

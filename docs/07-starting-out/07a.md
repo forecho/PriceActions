@@ -1,4 +1,4 @@
-# 步入交易生涯（第一部分）(基于 Al Brooks 课程字幕)
+# 步入交易生涯（第一部分）
 
 ## 新手交易者的常见误区 (Common Myths for New Traders)
 

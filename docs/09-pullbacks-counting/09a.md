@@ -1,4 +1,4 @@
-# 回调与数 K 线（第一部分）(基于 Al Brooks 课程 09A 字幕)
+# 回调与数 K 线（第一部分）
 
 ## 什么是回调 (What is a Pullback?)
 

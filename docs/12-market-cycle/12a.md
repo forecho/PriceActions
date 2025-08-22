@@ -1,4 +1,4 @@
-# 市场周期（第一部分）(基于 Al Brooks 课程 10A 字幕)
+# 市场周期（第一部分）
 
 ## 市场周期的四个组成部分 (The Four Parts of the Market Cycle)
 

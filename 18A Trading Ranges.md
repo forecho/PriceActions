@@ -1,4 +1,4 @@
-# 震荡区间（第一部分）(基于 Al Brooks 课程字幕)
+# 震荡区间（第一部分）
 
 ## 区分回调与震荡区间 (Distinguishing Pullbacks from Trading Ranges)
 

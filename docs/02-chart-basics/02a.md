@@ -1,4 +1,4 @@
-# 图表与市场基础 (基于 Al Brooks 课程 01 字幕)
+# 图表与市场基础
 
 ## 布鲁克斯交易课程简介 (Introduction to Brooks Trading Course)
 

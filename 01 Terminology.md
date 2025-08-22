@@ -1,4 +1,4 @@
-# 布鲁克斯交易课程：核心术语与基本概念 (基于 Al Brooks 课程 01A 字幕)
+# 布鲁克斯交易课程：核心术语与基本概念
 
 ## 核心术语与缩写 (Core Terminology & Abbreviations)
 

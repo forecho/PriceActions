@@ -1,4 +1,4 @@
-# 外汇基础（第四部分）：K线图与交易风格 (基于 Al Brooks 课程 04C 字幕)
+# 外汇基础（第四部分）：K线图与交易风格
 
 ## 外汇 K 线图的近似性 (Approximate Nature of Forex Charts)
 

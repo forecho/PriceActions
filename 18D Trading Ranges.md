@@ -1,4 +1,4 @@
-# 窄震荡区间 (基于 Al Brooks 课程 10D 字幕)
+# 窄震荡区间 
 
 ## 窄震荡区间 (Narrow Trading Ranges)
 

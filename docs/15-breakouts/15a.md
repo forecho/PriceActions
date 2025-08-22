@@ -1,4 +1,4 @@
-# 突破导论 (基于 Al Brooks 课程字幕)
+# 突破导论 
 
 ## 突破的核心定义 (Core Definition of a Breakout)
 

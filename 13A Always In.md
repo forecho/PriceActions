@@ -1,4 +1,4 @@
-# 单边趋势（第一部分）(基于 Al Brooks 课程 09A 字幕)
+# 单边趋势（第一部分）
 
 ## 市场基本状态：趋势与震荡 (Trend vs. Trading Range)
 

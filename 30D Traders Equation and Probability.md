@@ -1,4 +1,4 @@
-# 数学期望与概率（第四部分）(基于 Al Brooks 课程字幕)
+# 数学期望与概率（第四部分）
 
 ## 强趋势中的 50% 回调 (50% Pullbacks in Strong Trends)
 

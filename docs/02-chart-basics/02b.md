@@ -1,4 +1,4 @@
-# 成交量与新闻分析 (基于 Al Brooks 课程 02 字幕)
+# 成交量与新闻分析
 
 ## 成交量分析的误区 (The Pitfalls of Volume Analysis)
 

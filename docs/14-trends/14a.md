@@ -1,4 +1,4 @@
-# 趋势入门 (基于 Al Brooks 课程 09A 字幕)
+# 趋势入门 
 
 ## 趋势的定义与通道 (Definition & Channels)
 

@@ -1,4 +1,4 @@
-# 交易单边趋势 (Spike and Channel) (基于 Al Brooks 课程 09B 字幕)
+# 交易单边趋势 (Spike and Channel) 
 
 ## 单边趋势的核心理念 (Core Concepts of Spike & Channel Trends)
 

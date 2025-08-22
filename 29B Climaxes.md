@@ -1,4 +1,4 @@
-# 高潮（第二部分）：V 形反转与交易者心理 (基于 Al Brooks 课程字幕)
+# 高潮（第二部分）：V 形反转与交易者心理 
 
 ## V 形反转的本质 (The Nature of V-Shaped Reversals)
 

@@ -1,4 +1,4 @@
-# 高潮形态与交易（第三部分）(基于 Al Brooks 课程字幕)
+# 高潮形态与交易（第三部分）
 
 ## 高潮的基本概念 (Basic Concepts of Climaxes)
 

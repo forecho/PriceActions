@@ -1,4 +1,4 @@
-# 突破（第三部分）：第二段行情与区间突破 (基于 Al Brooks 课程 15C 字幕)
+# 突破（第三部分）：第二段行情与区间突破 
 
 ## 强突破与第二段行情 (Strong Breakouts & The Second Leg)
 

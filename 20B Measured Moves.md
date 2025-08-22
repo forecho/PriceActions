@@ -1,5 +1,5 @@
 # 移动测量目标位（第二部分）：基于震荡区间与突破高度的MM
-(基于 Al Brooks 课程 20B 字幕)
+
 
 ## 1. 基于震荡区间高度的MM目标位 (Measured Move based on Trading Range Height)
 

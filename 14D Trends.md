@@ -1,4 +1,4 @@
-# 三种趋势类型 (基于 Al Brooks 课程 04 字幕)
+# 三种趋势类型 
 
 ## 从开盘开始的趋势 (Trend from the Open)
 

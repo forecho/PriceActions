@@ -1,4 +1,4 @@
-# 回调与数 K 线（第三部分）(基于 Al Brooks 课程 09C 字幕)
+# 回调与数 K 线（第三部分）
 
 ## 无尽的回调/反弹 (Endless Pullbacks)
 

@@ -1,4 +1,4 @@
-# 窄通道与微通道（第二部分）(基于 Al Brooks 课程字幕)
+# 窄通道与微通道（第二部分）
 
 ## 窄震荡区间 (Narrow Trading Range)
 

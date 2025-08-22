@@ -1,4 +1,4 @@
-# 突破（第二部分）：跟随与确认 (基于 Al Brooks 课程字幕)
+# 突破（第二部分）：跟随与确认 
 
 ## 突破与跟随K线 (Breakouts and Follow-Through Bars)
 

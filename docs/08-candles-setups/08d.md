@@ -1,4 +1,4 @@
-# 评估交易机会：信号、背景与确认 (基于 Al Brooks 课程 09D 字幕)
+# 评估交易机会：信号、背景与确认
 
 ## 信号K线与背景的重要性 (The Importance of Signal Bars and Context)
 

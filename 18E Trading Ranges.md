@@ -1,4 +1,4 @@
-# 震荡区间交易：磁铁效应与反向操作 (基于 Al Brooks 课程字幕)
+# 震荡区间交易：磁铁效应与反向操作 
 
 ## 市场行为的本质：价格行为 vs. 新闻 (The Nature of Market Behavior: Price Action vs. News)
 

@@ -1,4 +1,4 @@
-# 通道（第三部分）(基于 Al Brooks 课程 10C 字幕)
+# 通道（第三部分）
 
 ## 新旧趋势的过渡 (Trend Transition)
 

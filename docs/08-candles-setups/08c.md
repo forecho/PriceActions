@@ -1,4 +1,4 @@
-# 窄震荡区间与突破模式 (基于 Al Brooks 课程 03 字幕)
+# 窄震荡区间与突破模式
 
 ## 窄震荡区间 (Narrow Trading Ranges)
 

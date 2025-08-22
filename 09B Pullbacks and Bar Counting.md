@@ -1,4 +1,4 @@
-# 回调与数 K 线（第二部分）(基于 Al Brooks 课程 09B 字幕)
+# 回调与数 K 线（第二部分）
 
 ## 双顶/双底作为旗形与反转 (Double Tops/Bottoms as Flags & Reversals)
 

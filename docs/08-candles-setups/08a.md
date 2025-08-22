@@ -1,4 +1,4 @@
-# K 线、交易机会与信号 K 线（第一部分）(基于 Al Brooks 课程字幕)
+# K 线、交易机会与信号 K 线（第一部分）
 
 ## 趋势 K 线与震荡 K 线 (Trend Bars & Trading Range Bars)
 

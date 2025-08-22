@@ -1,4 +1,4 @@
-# 三角形（第一部分）(基于 Al Brooks 课程 10A 字幕)
+# 三角形（第一部分）
 
 ## 三角形的定义与特征 (Definition & Characteristics)
 

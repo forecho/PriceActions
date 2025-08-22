@@ -1,4 +1,4 @@
-# 突破（第五部分）：缺口、强度与回测 (基于 Al Brooks 课程 10E 字幕)
+# 突破（第五部分）：缺口、强度与回测 
 
 ## 竭尽型缺口 vs. 测量型缺口 (Exhaustion vs. Measuring Gaps)
 

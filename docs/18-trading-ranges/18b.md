@@ -1,4 +1,4 @@
-# 震荡区间交易策略（第二部分）(基于 Al Brooks 课程字幕)
+# 震荡区间交易策略（第二部分）
 
 ## 震荡区间的双向机会 (Simultaneous Long & Short Opportunities)
 

@@ -1,4 +1,4 @@
-# 交易的数学基础：数学期望与概率 (基于 Al Brooks 课程 10A 字幕)
+# 交易的数学基础：数学期望与概率 
 
 ## 交易的核心：寻求数学优势 (The Core of Trading: Seeking a Mathematical Edge)
 

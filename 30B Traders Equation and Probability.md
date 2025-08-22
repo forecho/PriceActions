@@ -1,4 +1,4 @@
-# 数学期望与概率 (基于 Al Brooks 课程 02 节字幕)
+# 数学期望与概率 
 
 ## 概率与盈亏比的核心权衡 (The Core Trade-off: Probability vs. Reward/Risk)
 

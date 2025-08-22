@@ -1,4 +1,4 @@
-# 双顶与双底（第一部分）(基于 Al Brooks 课程 10A 字幕)
+# 双顶与双底（第一部分）
 
 ## 定义与识别 (Definition and Identification)
 
