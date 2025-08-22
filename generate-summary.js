@@ -9,7 +9,7 @@ import 'dotenv/config';
 async function aicomplete(prompt, srtContent, referenceContent) {
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
     const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" });
-    const fullPrompt = `${prompt}\n\nHere is the reference markdown file content for style and format:\n${referenceContent}\n\nHere is the SRT subtitle content to summarize:\n${srtContent}`;
+    const fullPrompt = `${prompt}\n\nHere is the reference markdown file content for style and format:\n${referenceContent}\n\nHere is the SRT subtitle content to summarize:\n${srtContent}\n\nImportant: Please provide ONLY the markdown content without any introductory text like "Here is the summary..." or "好的，这是根据您提供的..." - start directly with the markdown content.`;
     const result = await model.generateContent(fullPrompt);
     const response = await result.response;
     return response.text();
@@ -23,10 +23,17 @@ async function generateSummary(referenceFile, srtFile, referenceContent) {
 
     const summary = await aicomplete(prompt, srtContent, referenceContent);
 
+    // 检查返回内容是否为空或0字节
+    if (!summary || summary.trim().length === 0) {
+        console.log(`Warning: Generated summary for ${srtFile} is empty, skipping file generation.`);
+        return false;
+    }
+
     const outputFileName = path.basename(srtFile, '.srt') + '.md';
     await fs.writeFile(outputFileName, summary);
 
     console.log(`Successfully generated: ${outputFileName}`);
+    return true;
 }
 
 async function main() {
@@ -47,8 +54,10 @@ async function main() {
             const mdFileName = path.basename(srtFile, '.srt') + '.md';
             if (!mdFiles.has(mdFileName)) {
                 const srtFilePath = path.join(projectRoot, srtFile);
-                await generateSummary(referenceFile, srtFilePath, referenceContent);
-                generatedCount++;
+                const success = await generateSummary(referenceFile, srtFilePath, referenceContent);
+                if (success) {
+                    generatedCount++;
+                }
             }
         }
 
