@@ -1,5 +1,3 @@
-好的，这是根据您提供的 SRT 字幕内容和参考 Markdown 格式生成的总结：
-
 # Al Brooks 的个人图表设置
 
 ## 交易环境与理念 (Trading Environment & Philosophy)

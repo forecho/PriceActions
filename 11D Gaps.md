@@ -1,5 +1,3 @@
-好的，这是根据您提供的 SRT 字幕内容和参考 Markdown 格式生成的总结：
-
 # 缺口：趋势强度与阶梯模式 (基于 Al Brooks 课程 08D 字幕)
 
 ## 未被填补的缺口：趋势强度的标志 (Unfilled Gaps: A Sign of Trend Strength)
