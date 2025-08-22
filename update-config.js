@@ -35,6 +35,13 @@ const chapterMapping = {
     '27-head-shoulders': { text: '头肩形态', group: '交易技巧' },
     '28-rounded-tops-bottoms': { text: '圆顶和圆底', group: '交易技巧' },
     '29-climaxes': { text: '高潮', group: '交易技巧' },
+    '30-trading-setups': { text: '交易设置', group: '如何交易' },
+    '31-trading-entries': { text: '交易入场', group: '如何交易' },
+    '32-trading-exits': { text: '交易出场', group: '如何交易' },
+    '33-protective-stops': { text: '保护性止损', group: '如何交易' },
+    '34-actual-risk': { text: '实际风险', group: '如何交易' },
+    '35-scaling-in': { text: '分批入场', group: '如何交易' },
+    '36-trade-management': { text: '交易管理', group: '如何交易' },
     'price-action-all-in-one': { text: '价格行为全解', group: '总结' },
     'mes-recap': { text: 'MES回顾', group: '其他资源' },
     'qa-summary': { text: '问答总结', group: '其他资源' }
@@ -150,6 +157,14 @@ function generateSidebar() {
         sidebar.push({
             text: '交易技巧',
             items: groups['交易技巧']
+        });
+    }
+
+    // 如何交易
+    if (groups['如何交易']) {
+        sidebar.push({
+            text: '如何交易',
+            items: groups['如何交易']
         });
     }
 

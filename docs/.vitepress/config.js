@@ -547,6 +547,103 @@ export default defineConfig({
     ]
   },
   {
+    "text": "如何交易",
+    "items": [
+      {
+        "text": "交易设置",
+        "link": "/30-trading-setups/"
+      },
+      {
+        "text": "交易入场",
+        "link": "/31-trading-entries/"
+      },
+      {
+        "text": "交易出场",
+        "link": "/32-trading-exits/"
+      },
+      {
+        "text": "保护性止损",
+        "collapsed": false,
+        "items": [
+          {
+            "text": "33 A",
+            "link": "/33-protective-stops/33a"
+          },
+          {
+            "text": "33 B",
+            "link": "/33-protective-stops/33b"
+          },
+          {
+            "text": "33 C",
+            "link": "/33-protective-stops/33c"
+          },
+          {
+            "text": "33 D",
+            "link": "/33-protective-stops/33d"
+          },
+          {
+            "text": "33 E",
+            "link": "/33-protective-stops/33e"
+          },
+          {
+            "text": "33 F",
+            "link": "/33-protective-stops/33f"
+          },
+          {
+            "text": "33 G",
+            "link": "/33-protective-stops/33g"
+          }
+        ]
+      },
+      {
+        "text": "实际风险",
+        "collapsed": false,
+        "items": [
+          {
+            "text": "34 A",
+            "link": "/34-actual-risk/34a"
+          },
+          {
+            "text": "34 B",
+            "link": "/34-actual-risk/34b"
+          }
+        ]
+      },
+      {
+        "text": "分批入场",
+        "collapsed": false,
+        "items": [
+          {
+            "text": "35 A",
+            "link": "/35-scaling-in/35a"
+          },
+          {
+            "text": "35 B",
+            "link": "/35-scaling-in/35b"
+          },
+          {
+            "text": "35 C",
+            "link": "/35-scaling-in/35c"
+          }
+        ]
+      },
+      {
+        "text": "交易管理",
+        "collapsed": false,
+        "items": [
+          {
+            "text": "36 A",
+            "link": "/36-trade-management/36a"
+          },
+          {
+            "text": "36 B",
+            "link": "/36-trade-management/36b"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "text": "总结",
     "items": [
       {
