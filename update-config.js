@@ -205,6 +205,54 @@ export default defineConfig({
       { text: '文档', link: '/01-terminology/' }
     ],
 
+    // 配置搜索功能
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          root: {
+            translations: {
+              button: {
+                buttonText: '搜索文档',
+                buttonAriaLabel: '搜索文档'
+              },
+              modal: {
+                noResultsText: '无法找到相关结果',
+                resetButtonTitle: '清除查询条件',
+                footer: {
+                  selectText: '选择',
+                  navigateText: '切换'
+                }
+              }
+            }
+          }
+        },
+        // MiniSearch 配置选项
+        miniSearch: {
+          options: {
+            // 使用默认的字段提取器
+          },
+          // 搜索选项配置
+          searchOptions: {
+            fuzzy: 0.2,        // 模糊匹配阈值
+            prefix: true,      // 启用前缀搜索
+            boost: {           // 搜索结果权重
+              title: 4,        // 标题权重最高
+              text: 2,         // 正文内容权重
+              titles: 1        // 标题层级权重
+            }
+          }
+        },
+        // 排除特定页面或路径
+        exclude: (path) => {
+          // 排除一些不需要搜索的页面
+          return path.startsWith('/mes-recap/') ||
+            path.startsWith('/qa-summary/') ||
+            path.includes('search-config')
+        }
+      }
+    },
+
     sidebar: ${JSON.stringify(newSidebar, null, 2)},
 
     socialLinks: [
