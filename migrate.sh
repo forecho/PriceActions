@@ -112,9 +112,9 @@ process_chapter "28" "28-rounded-tops-bottoms" "圆顶和圆底" "Rounded Tops a
 process_chapter "29" "29-climaxes" "高潮" "Climaxes"
 
 # 处理 30-36 章节文件（交易相关）
-process_chapter "30" "30-trading-setups" "交易设置" "Trading Setups"
-process_chapter "31" "31-trading-entries" "交易入场" "Trading Entries"
-process_chapter "32" "32-trading-exits" "交易出场" "Trading Exits"
+process_chapter "30" "30-trading-setups" "交易设置" "Traders Equation"
+process_chapter "31" "31-trading-entries" "交易入场" "Swing Trading"
+process_chapter "32" "32-trading-exits" "交易出场" "Orders"
 process_chapter "33" "33-protective-stops" "保护性止损" "Protective Stops"
 process_chapter "34" "34-actual-risk" "实际风险" "Actual Risk"
 process_chapter "35" "35-scaling-in" "分批入场" "Scaling In"

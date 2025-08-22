@@ -20,13 +20,14 @@
   "license": "ISC",
   "devDependencies": {
     "dotenv": "^16.4.7",
-    "vitepress": "^1.0.0-rc.40",
+    "vitepress": "^1.6.4",
     "vue": "^3.3.9"
   },
   "dependencies": {
     "@docsearch/css": "^3.9.0",
     "@docsearch/js": "^3.9.0",
-    "@google/generative-ai": "^0.24.1"
+    "@google/generative-ai": "^0.24.1",
+    "openai": "^5.15.0"
   },
   "directories": {
     "doc": "docs"

@@ -551,15 +551,69 @@ export default defineConfig({
     "items": [
       {
         "text": "交易设置",
-        "link": "/30-trading-setups/"
+        "collapsed": false,
+        "items": [
+          {
+            "text": "30 A",
+            "link": "/30-trading-setups/30a"
+          },
+          {
+            "text": "30 B",
+            "link": "/30-trading-setups/30b"
+          },
+          {
+            "text": "30 C",
+            "link": "/30-trading-setups/30c"
+          },
+          {
+            "text": "30 D",
+            "link": "/30-trading-setups/30d"
+          },
+          {
+            "text": "30 E",
+            "link": "/30-trading-setups/30e"
+          }
+        ]
       },
       {
         "text": "交易入场",
-        "link": "/31-trading-entries/"
+        "collapsed": false,
+        "items": [
+          {
+            "text": "31 A",
+            "link": "/31-trading-entries/31a"
+          },
+          {
+            "text": "31 B",
+            "link": "/31-trading-entries/31b"
+          },
+          {
+            "text": "31 C",
+            "link": "/31-trading-entries/31c"
+          },
+          {
+            "text": "31 D",
+            "link": "/31-trading-entries/31d"
+          }
+        ]
       },
       {
         "text": "交易出场",
-        "link": "/32-trading-exits/"
+        "collapsed": false,
+        "items": [
+          {
+            "text": "32 A",
+            "link": "/32-trading-exits/32a"
+          },
+          {
+            "text": "32 B",
+            "link": "/32-trading-exits/32b"
+          },
+          {
+            "text": "32 C",
+            "link": "/32-trading-exits/32c"
+          }
+        ]
       },
       {
         "text": "保护性止损",
